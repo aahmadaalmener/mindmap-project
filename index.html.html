@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خريطة ذهنية</title>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+</head>
+<body>
+    <script>
+        const markdown = `
+# الفكرة الرئيسية
+## فكرة فرعية 1
+### تفاصيل أكثر
+## فكرة فرعية 2
+`;
+        window.markmap.autoLoader.renderAll();
+    </script>
+    <pre class="markmap">
+        <code>
+        # الفكرة الرئيسية
+        ## فكرة فرعية 1
+        ### تفاصيل أكثر
+        ## فكرة فرعية 2
+        </code>
+    </pre>
+</body>
+</html>
